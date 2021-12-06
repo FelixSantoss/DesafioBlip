@@ -53,19 +53,6 @@ public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
 
   
 }
-public static List<Root> FilterLanguage (List<Root> listRepos, string language){
-        List<Root> newlistRepos = new  List<Root>();
-    foreach(Root item in listRepos){
-            if(item.language == language){
-                newlistRepos.Add(item);
-            }
-
-
-    }
-              return newlistRepos;    
-
-}
-
 
   public class Owner
     {
